@@ -11,19 +11,15 @@ while (arraycnt < 1000) {
     console.log(a);
     total = total + (2*a[0]*a[1])+(2*a[0]*a[2])+(2*a[1]*a[2]);
     if (1*a[0] <= 1*a[1] && 1*a[0] <= 1*a[2]) {
-        console.log("test1");
         if(1*a[1] <= 1*a[2]) {
           total = total + (a[0]*a[1]);
-          console.log("test1");
         } else {
           total = total + (a[0]*a[2]);
         }
     }
     else if (1*a[1] <= 1*a[0] && 1*a[1] <= 1*a[2]) {
-        console.log("test2");
         if(1*a[0] <= 1*a[2]) {
           total = total + (a[1]*a[0]);
-          console.log("test1");
         } else {
           total = total + (a[1]*a[2]);
         }
@@ -31,11 +27,9 @@ while (arraycnt < 1000) {
     else {
       if(1*a[0] < 1*a[1]) {
         total = total + (a[2]*a[0]);
-        console.log("test1");
       } else {
         total = total + (a[2]*a[1]);
       }
-      console.log("test3");
     }
     arraycnt = arraycnt + 1;
   }
