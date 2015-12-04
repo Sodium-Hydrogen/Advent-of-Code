@@ -163,13 +163,24 @@ function calcMD5(str)
 }
 
 var input = "bgvyzdsv";
-var other = 1000000;
+var other = 0;
 var md5hash = "";
-while (md5hash.charAt(0-5) != "00000"){
-  md5is = calcMD5(input + other);
-  
+var md5stuff = "1";
+/*md5hash = calcMD5("pqrstuv1048970");
+console.log(md5hash);*/
+while (md5stuff != "00000"){
+  md5hash = calcMD5("pqrstuv1048970");
+  if (other >= 268718){
+    md5hash = "00000"
+  } else {
   other += 1;
+  md5stuff = md5hash.split(0,5);
+  }
 }
-  console.log(other);
+console.log.charAt(0-2)(other);
+console.log("exit");
+if ("8d0e7893cff9b2afa0d25b078a8fdff6" == md5hash){
+  console.log("1");
+} else {console.log("2");}
 
 
