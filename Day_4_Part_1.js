@@ -167,8 +167,9 @@ var other = 1000000;
 var md5hash = "";
 while (md5hash.charAt(0-5) != "00000"){
   md5is = calcMD5(input + other);
+  
   other += 1;
-  console.log(md5is);
 }
+  console.log(other);
 
 
