@@ -166,13 +166,13 @@ var input = "bgvyzdsv";
 var other = 0;
 var md5hash = "a";
 var md5stuff = "1";
-/*md5hash = calcMD5("pqrstuv1048970");
-console.log(md5hash);*/
 while (md5stuff != "00000"){
-  md5hash = calcMD5("pqrstuv1048970");
-  md5stuff = md5hash.split(0,5);
-  }
+  md5hash = calcMD5(input + other);
+  md5stuff = md5hash.substr(0,5);
+  other += 1;
 }
-console.log.charAt(0-2)(other);
+other -= 1;
+console.log(md5hash);
+console.log(input + other);
 console.log("exit");
 
