@@ -1,6 +1,5 @@
 var html = document.getElementsByTagName('pre')[0];
-var input = html.innerHTML;
-//var input = "dvszeiwmarrgswjxmb"
+input = html.innerHTML;
 console.log(input);
 var x = input.split('\n');
 console.log(x);
@@ -15,7 +14,7 @@ while (array < x.length - 1){
   var other = 0;
   var vowel = 0;
   var repeat = 0;
-  while (arraySub < arrayCal.length - 1){
+  while (arraySub < arrayCal.length){
     if (arrayCal[arraySub] == "a"){
       vowel += 1;
     } else {}
@@ -62,5 +61,3 @@ console.log(naughty);
 console.log(arrayCal.length);
 console.log(nice.length);
 console.log("exit");
-/*392
-227*/
