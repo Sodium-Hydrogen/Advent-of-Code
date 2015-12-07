@@ -1,5 +1,6 @@
 var html = document.getElementsByTagName('pre')[0];
 var input = html.innerHTML;
+//var input = "dvszeiwmarrgswjxmb"
 console.log(input);
 var x = input.split('\n');
 console.log(x);
@@ -8,14 +9,26 @@ var nice = [];
 var naughty = [];
 var niceArray = 0;
 var naughtyArray = 0;
-while (array < x.length){
+while (array < x.length - 1){
   var arraySub = 0;
   var arrayCal = x[array];
   var other = 0;
   var vowel = 0;
   var repeat = 0;
-  while (arraySub < arrayCal.length){
-    if (arrayCal[arraySub] == "a", "e", "i", "o", "u"){
+  while (arraySub < arrayCal.length - 1){
+    if (arrayCal[arraySub] == "a"){
+      vowel += 1;
+    } else {}
+    if (arrayCal[arraySub] == "e"){
+      vowel += 1;
+    } else {}
+    if (arrayCal[arraySub] == "i"){
+      vowel += 1;
+    } else {}
+    if (arrayCal[arraySub] == "o"){
+      vowel += 1;
+    } else {}
+    if (arrayCal[arraySub] == "u"){
       vowel += 1;
     } else {}
     if (arrayCal[arraySub] == arrayCal[arraySub + 1]){
@@ -25,14 +38,16 @@ while (array < x.length){
       other = 1;  
     } else {}
     if (arrayCal[arraySub] == "c" && arrayCal[arraySub + 1] == "d"){
-      other = 2;  
+      other = 1;  
     } else {}
     if (arrayCal[arraySub] == "p" && arrayCal[arraySub + 1] == "q"){
-      other = 3;  
+      other = 1;  
     } else {}
     if (arrayCal[arraySub] == "x" && arrayCal[arraySub + 1] == "y"){
-      other = 4;  
+      other = 1;  
     } else {}
+    arraySub += 1;
+    console.log(arrayCal);
   }
   if (vowel >= 3 && repeat >= 1 && other == 0){
     nice[niceArray] = arrayCal;
@@ -43,4 +58,10 @@ while (array < x.length){
   }
   array += 1;
 }
+console.log(nice);
+console.log(naughty);
+console.log(arrayCal.length);
+console.log(nice.length);
 console.log("exit");
+/*392
+227*/
