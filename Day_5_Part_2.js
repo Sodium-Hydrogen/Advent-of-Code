@@ -23,7 +23,6 @@ while (array < x.length - 1){
     } else {}
     other = arrayCal.match(matching);
     if (other.length == 2){
-      console.log(other);
       group = 1;
     } else {}
     arraySub += 1;
