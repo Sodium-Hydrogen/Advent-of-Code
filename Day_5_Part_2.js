@@ -1,6 +1,5 @@
 var html = document.getElementsByTagName('pre')[0];
 input = html.innerHTML;
-//var input = "qjhvhtzxzqqjkmpb"
 console.log(input);
 var x = input.split('\n');
 console.log(x);
@@ -15,7 +14,7 @@ while (array < x.length - 1){
   var other = 0;
   var repeat = 0;
   var group = 0;
-  while (arraySub < arrayCal.length){
+  while (arraySub < arrayCal.length - 1){
     var a = arrayCal[arraySub];
     var b = arrayCal[arraySub + 1];
     var matching = new RegExp(a + b , 'g');
@@ -23,7 +22,8 @@ while (array < x.length - 1){
       repeat += 1;
     } else {}
     other = arrayCal.match(matching);
-    if (other != null){
+    if (other.length == 2){
+      console.log(other);
       group = 1;
     } else {}
     arraySub += 1;
@@ -41,4 +41,3 @@ console.log(nice);
 console.log(naughty);
 console.log(nice.length);
 console.log("exit");
-//431
