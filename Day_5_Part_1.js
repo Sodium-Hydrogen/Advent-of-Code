@@ -47,7 +47,6 @@ while (array < x.length - 1){
       other = 1;  
     } else {}
     arraySub += 1;
-    console.log(arrayCal);
   }
   if (vowel >= 3 && repeat >= 1 && other == 0){
     nice[niceArray] = arrayCal;
