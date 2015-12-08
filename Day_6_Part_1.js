@@ -4,6 +4,12 @@ console.log(input);
 var other = input.split('\n');
 console.log(other);
 var x = 0;
+function mathT(){
+  var count = a[0];
+  while (a[0] <= a[2]){
+    if (lights[])
+  }
+}
 var y = 0;
 var array = 0;
 var stuff = 0;
@@ -27,6 +33,7 @@ while (array < other.length - 1){
     a.push(i[1]*1);
     a.push(m[0]*1);
     a.push(m[1]*1);
+    
     console.log(a);
   }
   array += 1;
