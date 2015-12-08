@@ -20,12 +20,14 @@ while (array < other.length - 1){
   stuff = other[array].split(" ");
   console.log(stuff);
   if (stuff[0] == "toggle"){
+    var a = [];
     i = stuff[1].split(",");
     m = stuff[3].split(",");
-    i.push(m[0]);
-    i.push(m[1]);
-    i.parseInt()
-    console.log(i);
+    a.push(i[0]*1)
+    a.push(i[1]*1);
+    a.push(m[0]*1);
+    a.push(m[1]*1);
+    console.log(a);
   }
   array += 1;
 }
