@@ -48,7 +48,7 @@ while (array < other.length - 1){
   }
   else{
     if (stuff[1] == "on"){
-      var a = [];
+      a = [];
       i = stuff[2].split(",");
       m = stuff[4].split(",");
       a.push(i[0]*1);
@@ -67,7 +67,7 @@ while (array < other.length - 1){
       things += 1;
       }
     } else {
-      var a = [];
+       a = [];
       i = stuff[2].split(",");
       m = stuff[4].split(",");
       a.push(i[0]*1);
@@ -79,7 +79,7 @@ while (array < other.length - 1){
         var count = things*1000 + a[0];
         var counta = things*1000 + a[2];
       while(count <= counta){
-        lights[count] = 1;
+        lights[count] = 0;
         count += 1;
       }
       things += 1;
@@ -91,8 +91,8 @@ while (array < other.length - 1){
 }
 array = 0;
 var total = 0;
-while (array < other.length - 1){
-  if (other[array] == 1){
+while (array < lights.length - 1){
+  if (lights[array] == 1){
     total += 1;
   } else {
   }
