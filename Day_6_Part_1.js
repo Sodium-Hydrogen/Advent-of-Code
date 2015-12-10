@@ -89,5 +89,15 @@ while (array < other.length - 1){
   }
   array += 1;
 }
+array = 0;
+var total = 0;
+while (array < other.length - 1){
+  if (other[array] == 1){
+    total += 1;
+  } else {
+  }
+  array += 1;
+}
+console.log(total);
 console.log(lights);
 console.log('exit')
