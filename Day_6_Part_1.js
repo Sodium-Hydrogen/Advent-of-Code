@@ -1,6 +1,5 @@
 var html = document.getElementsByTagName('pre')[0];
 input = html.innerHTML;
-//var input = "turn on 0,0 through 964,0"
 console.log(input);
 var other = input.split('\n');
 console.log(other);
