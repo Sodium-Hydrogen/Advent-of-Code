@@ -1,6 +1,6 @@
-var html = document.getElementsByTagName('pre')[0];
-input = html.innerHTML;
-//var input = "turn on 0,0 through 964,0"
+//var html = document.getElementsByTagName('pre')[0];
+//input = html.innerHTML;
+var input = "turn on 1,0 through 1,0"
 console.log(input);
 var other = input.split('\n');
 console.log(other);
@@ -87,13 +87,12 @@ while (array < other.length - 1){
 }
 array = 0;
 var total = 0;
-while (array < lights.length - 1){
-  if (lights[array] == 1){
-    total += 1;
-  } else {
-  }
+while (array < lights.length){
+  total += lights[array];
   array += 1;
 }
 console.log(total);
 console.log(lights);
 console.log('exit')
+//17325717
+//17325717
