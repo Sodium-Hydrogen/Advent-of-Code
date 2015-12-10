@@ -1,6 +1,5 @@
-//var html = document.getElementsByTagName('pre')[0];
-//input = html.innerHTML;
-var input = "turn on 1,0 through 1,0"
+var html = document.getElementsByTagName('pre')[0];
+input = html.innerHTML;
 console.log(input);
 var other = input.split('\n');
 console.log(other);
@@ -75,7 +74,10 @@ while (array < other.length - 1){
         var count = things*1000 + a[0];
         var counta = things*1000 + a[2];
       while(count <= counta){
+        if (lights[count] > 0){
         lights[count] -= 1;
+        } else {
+        }
         count += 1;
       }
       things += 1;
@@ -94,5 +96,3 @@ while (array < lights.length){
 console.log(total);
 console.log(lights);
 console.log('exit')
-//17325717
-//17325717
