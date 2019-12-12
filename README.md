@@ -1,5 +1,5 @@
-#Advent of Code
-Solutions to Advent of Code
+# Advent of Code
+My solutions to [Advent of Code]
 
 
-http://adventofcode.com
+[Advent of Code]:https://adventofcode.com
