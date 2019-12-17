@@ -1,7 +1,7 @@
 
 
 fuel = []
-with open("../input/1-1.txt") as file:
+with open("../input/1.txt") as file:
     fuel.extend(file.read().strip().split("\n"))
 
 

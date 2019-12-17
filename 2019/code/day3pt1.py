@@ -1,6 +1,10 @@
 
 wires = []
+<<<<<<< HEAD
+with open("../input/3.txt") as file:
+=======
 with open("../input/3-1.txt") as file:
+>>>>>>> 122c99581861fd7b7fd9c631a6f04e1ebb0a84a1
     wires = file.read().strip().split("\n")
 
 
