@@ -1,7 +1,7 @@
 
 
 numbers = []
-with open('../input/day3-test.txt') as file:
+with open('input/day3.txt') as file:
     numbers = [x for x in file.read().splitlines()]
 
 if __name__ == "__main__":
@@ -14,6 +14,7 @@ if __name__ == "__main__":
         #print()
     total = ['1' if x > half else '0'  for x in total[::-1]]
 
-    print("".join(total))
-    print(int("".join(total),2)^0xff)
+    gama = int("".join(total), 2)
+    epsilon = gama ^ int("".join(['1' for x in total]), 2)
+    print(f"Gama: {gama}, Epsilon: {epsilon}\nPower Comp {gama*epsilon}")
         

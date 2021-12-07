@@ -1,7 +1,7 @@
 
 depths = []
 cnt = 0
-with open("../input/day1.txt") as file:
+with open("input/day1.txt") as file:
     depths = [int(x) for x in file.read().strip().split("\n")]
 
 if __name__ == "__main__":

@@ -3,7 +3,7 @@
 directions = []
 position = {'x':0,'y':0}
 
-with open("../input/day2.txt") as file:
+with open("input/day2.txt") as file:
     directions = [tuple(line.split(" ")) for line in file.read().splitlines()]
 
 if __name__ == "__main__":
